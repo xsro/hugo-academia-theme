@@ -14,7 +14,7 @@
                 {{end}}
                 </li>
             {{end}}
-            {{ if .Site.IsMultiLingual }}
+            {{ if hugo.IsMultilingual }}
             {{ $node := . }}
             {{ .Scratch.Set "separator" true }}
             {{ range (default .Site.Home.AllTranslations .Translations) }}
